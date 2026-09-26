@@ -91,7 +91,6 @@ APC/
 ├── apc.h            # Function declarations and structure definition
 ├── Makefile         # Build script
 └── README.md        # Project documentation
-
 ---
 
 ## 🤝 Contributing
