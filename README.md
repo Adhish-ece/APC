@@ -55,15 +55,19 @@ Ensure you have a standard C compiler installed on your system:
 ### Installation
 
 1. **Clone the repository:**
+   ```bash
    git clone https://github.com/Adhish-ece/APC.git
+   ```
 
 2. **Navigate into the project directory:**
+   ```bash
    cd APC
+   ```
 
 3. **Compile the program:**
+   ```bash
    make
-   # Or compile manually with GCC:
-   # gcc *.c -o apc
+   ```
 
 ---
 
@@ -71,14 +75,15 @@ Ensure you have a standard C compiler installed on your system:
 
 Run the compiled executable from your terminal:
 
+```bash
 ./apc
-
-Follow the interactive menu prompts to input numbers and perform arithmetic operations.
+```
 
 ---
 
 ## 📁 Project Structure
 
+```text
 APC/
 ├── main.c           # Program entry point and menu driver
 ├── add.c            # Addition algorithm implementation
@@ -88,6 +93,7 @@ APC/
 ├── apc.h            # Header file with struct definitions & prototypes
 ├── Makefile         # Build automation script
 └── README.md        # Project documentation
+```
 
 ---
 
@@ -113,4 +119,4 @@ Distributed under the MIT License. See `LICENSE` for details.
 
 **Adhish** — [@Adhish-ece](https://github.com/Adhish-ece)
 
-Project Link: https://github.com/Adhish-ece/APC
+Project Link: [https://github.com/Adhish-ece/APC](https://github.com/Adhish-ece/APC)
