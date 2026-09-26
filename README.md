@@ -20,21 +20,21 @@ Welcome to **APC** (Arbitrary Precision Calculator), designed and implemented by
 ---
 
 ## 💡 About
-Standard integer types in C (`int`, `long int`, `long long int`) are constrained by hardware limits (32-bit or 64-bit) and overflow when dealing with extremely large numbers.
+Standard primitive types in C (`int`, `long int`, `long long int`) are constrained by hardware limits (32-bit or 64-bit) and overflow when dealing with extremely large numbers.
 
-**APC (Arbitrary Precision Calculator)** bypasses primitive integer limits by storing digits dynamically inside **Doubly Linked Lists**. This enables arithmetic operations on numbers of virtually unlimited length, limited only by available system RAM.
+**APC (Arbitrary Precision Calculator)** bypasses standard integer limits by storing digits dynamically inside **Doubly Linked Lists**. This enables accurate arithmetic operations on numbers of virtually unlimited length, bounded only by system memory.
 
 ---
 
 ## ✨ Features
-- **Unlimited Precision Arithmetic:** Compute operations on numbers with hundreds or thousands of digits.
+- **Unlimited Precision Arithmetic:** Perform operations on numbers with hundreds or thousands of digits.
 - **Core Math Operations:**
   - Addition (`+`)
   - Subtraction (`-`)
   - Multiplication (`*`)
   - Division (`/`)
-- **Dynamic Memory Allocation:** Memory is requested dynamically per digit block using doubly linked nodes.
-- **Sign & Zero-Padding Logic:** Full support for positive/negative signs and automatic removal of leading zeros.
+- **Dynamic Memory Allocation:** Allocates node memory dynamically for digit blocks.
+- **Sign & Zero-Padding Logic:** Supports positive/negative values and automatically strips leading zeros.
 
 ---
 
@@ -48,20 +48,22 @@ Standard integer types in C (`int`, `long int`, `long long int`) are constrained
 ## 🚀 Getting Started
 
 ### Prerequisites
-Make sure you have a C compiler installed on your system:
+Ensure you have a standard C compiler installed on your system:
 - **GCC** or **Clang**
 - **Make** (optional)
 
 ### Installation
 
-1. Clone the repository:
+1. **Clone the repository:**
    git clone https://github.com/Adhish-ece/APC.git
 
-2. Navigate into the repository:
+2. **Navigate into the project directory:**
    cd APC
 
-3. Compile the program using GCC:
-   gcc *.c -o apc
+3. **Compile the program:**
+   make
+   # Or compile manually with GCC:
+   # gcc *.c -o apc
 
 ---
 
@@ -71,12 +73,7 @@ Run the compiled executable from your terminal:
 
 ./apc
 
-### Example Usage:
-Enter two large numbers alongside the operator:
-123456789012345678901234567890 + 987654321098765432109876543210
-
-Output:
-1111111110111111111011111111100
+Follow the interactive menu prompts to input numbers and perform arithmetic operations.
 
 ---
 
@@ -84,24 +81,25 @@ Output:
 
 APC/
 ├── main.c           # Program entry point and menu driver
-├── add.c            # Addition algorithm logic
-├── sub.c            # Subtraction algorithm logic
-├── mul.c            # Multiplication algorithm logic
-├── div.c            # Division algorithm logic
-├── apc.h            # Function declarations and structure definition
-├── Makefile         # Build script
+├── add.c            # Addition algorithm implementation
+├── sub.c            # Subtraction algorithm implementation
+├── mul.c            # Multiplication algorithm implementation
+├── div.c            # Division algorithm implementation
+├── apc.h            # Header file with struct definitions & prototypes
+├── Makefile         # Build automation script
 └── README.md        # Project documentation
+
 ---
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, bug reports, and feature requests are welcome!
 
-1. Fork the repository
+1. Fork the project repository.
 2. Create your feature branch (`git checkout -b feature/NewFeature`)
-3. Commit your changes (`git commit -m 'Add NewFeature'`)
+3. Commit your changes (`git commit -m "Add NewFeature"`)
 4. Push to the branch (`git push origin feature/NewFeature`)
-5. Open a Pull Request
+5. Open a Pull Request.
 
 ---
 
@@ -113,6 +111,6 @@ Distributed under the MIT License. See `LICENSE` for details.
 
 ## 📬 Contact
 
-**Adhish** - [@Adhish-ece](https://github.com/Adhish-ece)
+**Adhish** — [@Adhish-ece](https://github.com/Adhish-ece)
 
 Project Link: https://github.com/Adhish-ece/APC
